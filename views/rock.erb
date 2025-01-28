@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+
+    <h2> We played rock! </h2>
+    <h2> They played <%= @comp_move %>! </h2>
+    <% if @outcome == "won" %>
+      <h2 style = "color: green" > We <%= @outcome %>! </h2>
+    <% elsif @outcome == "lost" %>
+      <h2 style = "color: red" > We <%= @outcome %>! </h2>
+    <% else %>
+      <h2 style = "color: black" > We <%= @outcome %>! </h2>
+    <% end %>
+</body>
+</html>
